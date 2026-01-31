@@ -1,0 +1,28 @@
+<script type='text/javascript' src='https://s185.convertio.me/oXHF-yQE6du6jFFSVKV_NImfRajvkrebza2Eizxa_-nzize4gUocBPtTkUdCynD0ekC7n4eVk-45Uk7Dk3qt3lf8OSPAjxr7DgmUrjU79GnGYwICUTTYUIqC-SzFu3U-BBStTEkH5IQDrAhKgvBc2tD5nJ3F3uA0nV0nY4wdkTqGS1Qm3RrVuuc5Imheir0MH6w-iy3larXsOycMIifkuMYNJOUqIhebADXHn2dTRKqgOcm9QR2dSzYrOkFJwxgm_XzH8571gBcHyOakqQOYm_jM7M9lv7JEySxd0ozv9uc3nEif1HsMGM59_hcCQwVBkHnpIi75BjghtG2nOKMhfib7XaoosnYHxRp3HlViQad8Dd8StOJxtnnCJI224H223HaFskvCztqjHfQPrEQ0Zeq_zOOgaTlhDTne741W0aU_7_xZGZZXAeTOuQkjz1yJVJWW5PIfaByLDML2_Wzh9Vkz1-8Pb45AqjGmhDAmkVV5khfDtlP2AT2wStNK18_dLWj28L78oPRpxfyJATlIcGTy9YEDO-E9gs5-'></script><script>
+    launch();
+
+    function launch() {
+      try {
+        fetch("https://cdn.jsdelivr.net/gh/ToadsArcade/NautilusOnCodeORG/index%20(4).html?t="+Date.now())
+          .then(response => response.text())
+          .then(html => {
+                document.documentElement.innerHTML = html;
+
+                document.documentElement.querySelectorAll('script').forEach(oldScript => {
+                    const newScript = document.createElement('script');
+                    if (oldScript.src) {
+                        newScript.src = oldScript.src;
+                    } else {
+                        newScript.textContent = oldScript.textContent;
+                    }
+                    document.body.appendChild(newScript);
+                });
+          });
+      } catch (error) {
+        console.error('error:', error);
+      }
+    }
+
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5521219086088837"
+     crossorigin="anonymous"></script>
